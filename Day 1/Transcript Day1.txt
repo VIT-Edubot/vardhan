@@ -1,0 +1,34 @@
+Transcript of HTML Structure
+
+
+
+HTML Breakdown
+1. Document Declaration
+   - <!DOCTYPE html> is used to define the document as an HTML5 page.
+
+2. HTML Tag & Language Attribute
+   - <html lang="en"> specifies the document language as English.
+
+3. Head Section
+   - <head> contains metadata, including:
+     - <meta charset="UTF-8"> for character encoding.
+     - <meta name="viewport" content="width=device-width, initial-scale=1.0"> for responsive design.
+     - <title>Welcome to LaunchDarkly</title> to define the browser tab title.
+
+4. Body Section
+   - <body> contains visible content:
+     - <h1>: "Welcome to LaunchDarkly" (main title)
+     - <h2>: "Our Mission and Values" (subheading)
+     - <p>: Short mission statement
+     - <h2>: "Core Values" (subheading)
+     - <ul>: Unordered list of core values (Innovation, Collaboration, User-First Mindset)
+     - <a>: Link to LaunchDarkly homepage
+     - <img>: Placeholder image with alt text
+
+5. Best Practices Followed
+   - Proper indentation for readability.
+   - Comments explaining each section.
+   - Use of semantic HTML tags.
+   - Placeholder elements for links and images, ready for real content substitution.
+
+
