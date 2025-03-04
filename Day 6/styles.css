@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation Styling (Moved to Top) */
+nav {
+    width: 100%;
+    background-color: #1E2A38;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Header Moved Below Navbar */
+header {
+    text-align: center;
+    padding: 60px 20px 20px;
+    background-color: #0073e6;
+    color: white;
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* Feedback Form Container */
+#feedback-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+/* Input Fields */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Radio Button Group */
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Adjust Radio Button Size */
+#yes, #no {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Submit Button */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Media Section */
+.media-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #feedback-form {
+        width: 95%;
+    }
+
+    .radio-group {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* Replace the existing rating styles with these */
+.rating-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.rating-container label {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.rating-container label::before {
+    content: attr(data-rating);
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.rating-container input[type="radio"] {
+    margin: 0;
+    width: auto;
+}
+
+#rating-output {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#selected-rating {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.rating-message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    min-height: 20px;
+}
+#labelForRating{
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+}
