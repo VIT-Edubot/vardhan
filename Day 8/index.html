@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1>LaunchDarkly Employee Dashboard</h1>
+    </header>
+
+    <!-- Add Employee Form Section -->
+    <section id="employee-form-section">
+        <form id="employee-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="position">Position:</label>
+                <input type="text" id="position" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <input type="text" id="department" required>
+            </div>
+            <button type="submit" id="submit-btn">Add Employee</button>
+        </form>
+    </section>
+
+    <section id="controls">
+        <button id="show-active">Show Active Employees</button>
+        <button id="sort-employees">Sort by Name</button>
+    </section>
+
+    
+    <section id="employee-list"></section>
+
+    <script src="employees.js"></script>
+</body>
+</html>
