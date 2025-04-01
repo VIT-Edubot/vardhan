@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Light Theme */
+  .dashboard.light {
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  /* Dark Theme */
+  .dashboard.dark {
+    background-color: #333;
+    color: #ffffff;
+  }
+  
+  /* Dashboard Styles */
+  .dashboard {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50vw; 
+    max-width: 500px; 
+    min-width: 350px; 
+  }
+
+  input {
+    width: 80%; 
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  .section {
+    margin: 15px 0;
+  }
+  
+  input {
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .dashboard.light button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .dashboard.dark button {
+    background-color: #ffcc00;
+    color: black;
+  }
+  
+  .inactive-msg {
+    color: red;
+    font-weight: bold;
+  }
+  
